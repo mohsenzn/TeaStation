@@ -107,8 +107,52 @@ a {
 }
 /* header */
 .header {
-    min-height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-      url("../images/main-bcg.jpeg") center/cover no-repeat fixed;
-    position: relative;
-  }
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../images/main-bcg.jpeg") center/cover no-repeat fixed;
+  
+}
+/* banner */
+.banner {
+    
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  letter-spacing: var(--letterSpacing);
+}
+.banner__subtitle {
+  font-size: 3rem;
+
+  font-family: var(--slantedText);
+  color: var(--primaryColor);
+  /* animation */
+  animation: slideFormRight 5s ease-in-out 1;
+}
+
+.banner__title {
+  text-transform: uppercase;
+  font-size: 4.5rem;
+  color: var(--mainWhite);
+  margin-top: 2.5rem;
+  line-height: 1.3;
+  animation: slideFromLeft 5s ease-in-out 1;
+}
+.main-btn,
+.banner__btn {
+    display:inline-block;
+    font-size: 1.1rem;
+    background: var(--primaryColor);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1rem 1.5rem;
+    color: var(--mainDark);
+    font-weight: bold;
+    outline:0.2rem solid var(--primaryColor);
+    outline-offset:4px;
+    cursor: pointer;
+    transition:var(--mainTransition);
+    margin-top: 2.3rem;
+}
