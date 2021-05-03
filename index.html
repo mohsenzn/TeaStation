@@ -99,38 +99,163 @@
     <!-- end of skills section -->
     <!-- about -->
     <section class="about">
-    
-        <div class="section-left clearfix">
-          <article class="about__img">
-            <div class="about__imgContainer">
-              <img src="./images/about-bcg.jpeg" alt="tea" class="about__pic" />
-            </div>
-          </article>
-        </div>
-        <article class="about__info">
-          <!-- info title -->
-          <div >
-            <h3 class="info__subtitle">about our</h3>
-            <h2 class="info__title">tea station</h2>
+      <div class="section-left clearfix">
+        <article class="about__img">
+          <div class="about__imgContainer">
+            <img src="./images/about-bcg.jpeg" alt="tea" class="about__pic" />
           </div>
-          <!-- info text -->
-          <p class="about__text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-            numquam rem eos vel consequuntur obcaecati?
-          </p>
-          <p class="about__text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-            numquam rem eos vel consequuntur obcaecati?
-          </p>
-          <a href="about.html" class="main__btn">learn more</a>
         </article>
-     
+      </div>
+      <article class="about__info">
+        <!-- info title -->
+        <div>
+          <h3 class="info__subtitle">about our</h3>
+          <h2 class="info__title">tea station</h2>
+        </div>
+        <!-- info text -->
+        <p class="about__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+          numquam rem eos vel consequuntur obcaecati?
+        </p>
+        <p class="about__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+          numquam rem eos vel consequuntur obcaecati?
+        </p>
+        <a href="about.html" class="main__btn">learn more</a>
+      </article>
     </section>
     <!-- end of about.html -->
     <!-- Products -->
     <section class="products">
-        
+      <article class="products__info">
+        <div>
+          <h3 class="product__subtitle">check out</h3>
+          <h2 class="product__title text-white">our products</h2>
+        </div>
+        <p class="product__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, quae
+          vitae! Natus sed fugiat id laudantium nemo, asperiores corporis amet!
+        </p>
+        <a href="products.html" class="main__btn">inventory</a>
+      </article>
+
+      <!-- single product -->
+      <div class="product">
+        <img
+          src="./images/product-1.jpeg"
+          alt="single product"
+          class="product__img"
+        />
+        <p class="product__invTitle">product title</p>
+        <p class="product__invPrice">$6.99</p>
+      </div>
+      <!--end of single product -->
+      <!-- single product -->
+      <div class="product">
+        <img
+          src="./images/product-3.jpeg"
+          alt="single product"
+          class="product__img"
+        />
+        <p class="product__invTitle">product title</p>
+        <p class="product__invPrice">$6.99</p>
+      </div>
+      <!--end of single product -->
+      <!-- single product -->
+      <div class="product">
+        <img
+          src="./images/product-2.jpeg"
+          alt="single product"
+          class="product__img"
+        />
+        <p class="product__invTitle">product title</p>
+        <p class="product__invPrice">$6.99</p>
+      </div>
+      <!--end of single product -->
     </section>
+    <!-- end of product section-->
+    <!-- contact -->
+    <section class="contact">
+      <article class="contact__info">
+        <!-- single item -->
+        <div class="contact__item">
+          <h3 class="contact__title">
+            <span class="contact__icon"
+              ><i class="fa fa-location-arrow"></i></span
+            >Address
+          </h3>
+          <h3 class="contact__text">
+            523 N Fairfax Ave, Los Angeles, CA 90048
+          </h3>
+        </div>
+        <!-- end of single item -->
+        <!-- single item -->
+        <div class="contact__item">
+          <h3 class="contact__title">
+            <span class="contact__icon"><i class="fa fa-envelope"></i></span
+            >Email
+          </h3>
+          <h3 class="contact__text">emaill@emill.com</h3>
+        </div>
+        <!-- end of single item -->
+        <!-- single item -->
+        <div class="contact__item">
+          <h3 class="contact__title">
+            <span class="contact__icon"><i class="fa fa-phone"></i></span>PHone
+          </h3>
+          <h3 class="contact__text">+ 123 456 789</h3>
+        </div>
+        <!-- end of single item -->
+      </article>
+      <!-- Form article -->
+      <article class="contact__form">
+        <form
+          action="https://formspree.io/learncodetutorial@gmail.com"
+          method="POST"
+          class="form-group"
+        >
+          <input
+            type="text"
+            name="name"
+            placeholder="name"
+            class="form-control"
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="email"
+            class="form-control"
+          />
+          <textarea
+            name="message"
+            placeholder="message"
+            class="form-control"
+            rows="5"
+          ></textarea>
+          <button class="main__btn">send</button>
+        </form>
+      </article>
+    </section>
+    <!-- end of contact form -->
+    <!-- footer -->
+    <footer class="footer">
+        <div class="social__icons">
+            <!-- social icons -->
+            <a href="#" class="social__icon">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#" class="social__icon">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="social__icon">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+        <p class="footer__text">
+            &copy;2021 <span class="text-primary">tea station</span>. all rights
+            reserved
+          </p>
+    </footer>
     <script src="js/app.js"></script>
   </body>
 </html>

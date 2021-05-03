@@ -259,52 +259,172 @@ a {
 }
 
 /* about */
-.about{
-    display:flex;
-    padding:3rem ;
+.about {
+  display: flex;
+  padding: 3rem;
 }
-.section-left{
-    padding:4rem 0;
-    width:75%;
-    margin:0 auto;
-    /* max-width: 1170px; */
+.section-left {
+  padding: 4rem 0;
+  width: 75%;
+  margin: 0 auto;
+  /* max-width: 1170px; */
 }
 .about__img {
-    padding:2rem;
+  padding: 2rem;
 }
-.about__imgContainer{
-    background:var(--primaryColor);
-    border:0.5rem solid var(--primaryColor);
-    border-radius: 1rem;
-    overflow: hidden;
+.about__imgContainer {
+  background: var(--primaryColor);
+  border: 0.5rem solid var(--primaryColor);
+  border-radius: 1rem;
+  overflow: hidden;
 }
-.about__pic{
-    width:100%;
-    display:block;
-    transition:var(--mainTransition);
+.about__pic {
+  width: 100%;
+  display: block;
+  transition: var(--mainTransition);
 }
 .about__imgContainer:hover .about__pic {
-    opacity: 0.5;
-    transform:scale(1.2)
+  opacity: 0.5;
+  transform: scale(1.2);
 }
 /* section title */
-.about__info{
-    padding: 6rem 1rem;
+.about__info {
+  padding: 6rem 1rem;
 }
-.info__subtitle{
-    font-size: 2.5rem;
-    font-family: var(--slantedText);
-    letter-spacing:var(--letterSpacing);
-    text-transform:capitalize;
-    color:var(--primaryColor);
+.info__subtitle {
+  font-size: 2.5rem;
+  font-family: var(--slantedText);
+  letter-spacing: var(--letterSpacing);
+  text-transform: capitalize;
+  color: var(--primaryColor);
 }
-.info__title{
-    font-size: 2.5rem;
+.info__title {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+.about__text {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  padding-right: 10rem;
+}
+/* Products */
+.products {
+  display: flex;
+  background: var(--mainDark);
+  padding: 4rem 3rem;
+}
+.products__info {
+  padding: 2rem;
+}
+.product__subtitle {
+  font-size: 2.5rem;
+  font-family: var(--slantedText);
+  letter-spacing: var(--letterSpacing);
+  text-transform: capitalize;
+  color: var(--primaryColor);
+}
+.product__title {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+.product__text {
+  font-size: 1.2rem;
+  color: var(--mainWhite);
+  margin: 1rem 0;
+  /* max-width:26rem; */
+}
+.product {
+  padding: 2rem 0;
+  overflow: hidden;
+}
+.product__img {
+  width: 100%;
+  display: block;
+  border-radius: 0.4rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+.product__invTitle {
+  color: var(--mainWhite);
+  text-transform: uppercase;
+  letter-spacing: var(--letterSpacing);
+  margin: 1rem;
+}
+.product__invPrice {
+  font-size: 1.4rem;
+  color: var(--primaryColor);
+  letter-spacing: var(--letterSpacing);
+  font-family: var(--slantedText);
+  font-weight: bold;
+  margin: 1rem;
+}
+/* Contact */
+.contact {
+  display: flex;
+  padding: 6rem 4rem;
+}
+.contact__info {
+  width: 50%;
+}
+.contact__item {
+  margin-bottom: 3rem;
+}
+.contact__title {
+  color: var(--primaryColor);
+  font-family: var(--slantedText);
+  text-transform: uppercase;
+  letter-spacing: calc(var(--letterSpacing) * 1.3);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.contact__text {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+/* contact form */
+.contact__form {
+  width: 50%;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  border: none;
+  margin: 2rem 0;
+  border-bottom: 2px solid var(--primaryColor);
+
+  padding: 1.3rem 0;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.form-control::placeholder {
+  color: var(--primaryColor);
+  text-transform: uppercase;
+  letter-spacing: var(--letterSpacing);
+}
+/* FOOter */
+.footer {
+    background:var(--mainDark);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 5rem;
+}
+.social__icon{
+    color: var(--mainWhite);
+    font-size: 2rem;
+    margin-right: 1rem;
+ 
+    transition: var(--mainTransition);
+}
+.social__icon:hover{
+    color: var(--primaryColor);
+}
+.footer__text{
     text-transform: uppercase;
-}
-.about__text{
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin:1rem 0;
-    padding-right: 10rem;
+    color: var(--mainWhite);
+    letter-spacing: var(--letterSpacing);
+    padding-top: 1rem;
+    font-size: 1rem;
 }
